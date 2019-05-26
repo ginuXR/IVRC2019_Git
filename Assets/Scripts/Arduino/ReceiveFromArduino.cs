@@ -25,7 +25,6 @@ public class ReceiveFromArduino : MonoBehaviour
 
         //時間計測開始
         duration = 0;
-
     }
 
     // Update is called once per frame
@@ -48,9 +47,7 @@ public class ReceiveFromArduino : MonoBehaviour
 
             if (Sensor[0] == "quat")
             {
-
-
-                //Arduinoから来た加速度センサの値をそのままSegwayにぶち込んでいる
+                //Arduinoから来た加速度センサの値をそのままぶち込んでいる
                 for (int i = 0; i < 4; i++)
                 {
                     angle[i] = float.Parse(Sensor[i + 1]);
