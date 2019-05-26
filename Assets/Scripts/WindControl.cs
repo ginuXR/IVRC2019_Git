@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WindControl : MonoBehaviour
 {
+    public GameObject DirPicture;
     private float duration;
 
     void WindPower(float power)
@@ -16,6 +17,9 @@ public class WindControl : MonoBehaviour
     {
         //風の方向変更
         this.transform.localEulerAngles = new Vector3(0.0f, direction[1], 0.0f);
+
+        //UIの矢印の方向
+        DirPicture.transform.localEulerAngles = new Vector3(0.0f, 0.0f, direction[1]);
     }
 
     // Start is called before the first frame update
