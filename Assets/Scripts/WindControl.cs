@@ -19,7 +19,7 @@ public class WindControl : MonoBehaviour
         this.transform.localEulerAngles = new Vector3(0.0f, direction[1], 0.0f);
 
         //UIの矢印の方向
-        DirPicture.transform.localEulerAngles = new Vector3(0.0f, 0.0f, - direction[1]);
+        DirPicture.transform.localEulerAngles = new Vector3(0.0f, 0.0f, direction[1]);
     }
 
     // Start is called before the first frame update
