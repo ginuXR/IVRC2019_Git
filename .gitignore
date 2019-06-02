@@ -4,6 +4,8 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+Assets/EffectExamples
+Assets/NatureStarterKit2
 
 # Visual Studio cache directory
 .vs/
