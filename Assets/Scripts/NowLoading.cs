@@ -14,9 +14,10 @@ public class NowLoading : MonoBehaviour
 
     IEnumerator Progress()
     {
-        for (int i = 0; i <= 300; i++)
+        //メータの進み具合
+        for (int i = 0; i <= 1000; i++)
         {
-            GetComponent<Image>().fillAmount = i * Speed / 300.0f;
+            GetComponent<Image>().fillAmount = i * Speed / 500.0f;
 
             LoadNum.GetComponent<Text>().text = "" + (int)(GetComponent<Image>().fillAmount * 100);
             yield return new WaitForSeconds(0.01f);

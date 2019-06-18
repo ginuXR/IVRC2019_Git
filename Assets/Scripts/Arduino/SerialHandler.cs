@@ -8,7 +8,7 @@ public class SerialHandler : MonoBehaviour
     public delegate void SerialDataReceivedEventHandler(string message);
     public event SerialDataReceivedEventHandler OnDataReceived;
 
-    private string portName = "COM5";  //変更する必要あり
+    public string portName = "COM7";  //変更する必要あり
     private int baudRate = 115200;  // ボーレート(Arduinoに記述したものに合わせる)
 
     private SerialPort serialPort_;
